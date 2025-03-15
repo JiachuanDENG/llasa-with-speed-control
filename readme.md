@@ -1,5 +1,8 @@
 # LLASA With Speed Control
 
+#### Update (2025-03-15): Add Llasa Speed control finetune and dataprocessing code.
+
+
 ## Introduction
 This project is a fine-tuned version of the original LLASA project. The original project was developed by the [LLaSA_training](https://github.com/zhenye234/LLaSA_training) 
 
@@ -9,7 +12,9 @@ The original LLASA model can already generate very high quality and natural soun
 We used the open-sourced Genshin Impact dataset from [here](https://pan.ai-hobbyist.com/Genshin%20Datasets/%E8%8B%B1%E8%AF%AD%20-%20English) to fine-tune the original LLASA model.
 
 ## Basic Idea
-The basic idea is simple, we roughly divide the Genshin Impact dataset into 3 categories: slow, medium, and fast based on syllable count per second. And add special tokens ['<|SLOW|>', '<|MEDIUM|>', '<|FAST|>'] to control the generated speech speed. Details of the implementation will be added later.
+The basic idea is simple, we roughly divide the Genshin Impact dataset into 3 categories: slow, medium, and fast based on syllable count per second. And add special tokens ['<|SLOW|>', '<|MEDIUM|>', '<|FAST|>'] to control the generated speech speed.  
+
+See details in `data_preprocessing/get_memmap_speedV2.py`
 
 ## Try the model
 Note that huggingface tokens is necessary to download xcodec2 pre-trained model. 
