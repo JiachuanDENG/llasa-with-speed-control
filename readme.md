@@ -5,7 +5,7 @@ This project is a fine-tuned version of the original LLASA project. The original
 
 The original LLASA model can already generate very high quality and natural sounding speech. However, the original model does not have the ability to control the speed of the generated speech. This project aims to show LLASA can also be extended to include more controllable features, included but not limited to speed control.
 
-## Dataset 
+## Dataset
 We used the open-sourced Genshin Impact dataset from [here](https://pan.ai-hobbyist.com/Genshin%20Datasets/%E8%8B%B1%E8%AF%AD%20-%20English) to fine-tune the original LLASA model.
 
 ## Basic Idea
@@ -19,7 +19,7 @@ Place the downloaded model under `pretrained_model` folder and run the following
 ```bash
 python llasa_inference_withloadedModel.py
 ```
-Type in the text you want to generate and the speed you want to control. The generated speech will be saved as `gen_[filename]_[speed].wav` in the same directory. 
+Type in the text you want to generate and the speed you want to control. The generated speech will be saved as `./example/gen_outs/gen_[filename]_[speed].wav` in the same directory. 
 ![Image](https://github.com/user-attachments/assets/dcaa8230-c5c8-4350-88e5-58daacefe299)
 
 
