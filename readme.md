@@ -5,7 +5,7 @@ This project is a fine-tuned version of the original LLASA project. The original
 
 The original LLASA model can already generate very high quality and natural sounding speech. However, the original model does not have the ability to control the speed of the generated speech. This project aims to show LLASA can also be extended to include more controllable features, included but not limited to speed control.
 
-## Dataset
+## Dataset 
 We used the open-sourced Genshin Impact dataset from [here](https://pan.ai-hobbyist.com/Genshin%20Datasets/%E8%8B%B1%E8%AF%AD%20-%20English) to fine-tune the original LLASA model.
 
 ## Basic Idea
