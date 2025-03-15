@@ -2,6 +2,7 @@
 
 #### Update (2025-03-15): Add Llasa Speed control finetune and dataprocessing code.
 
+#### On-going experiments: Emotion Contorl & Accent Control
 
 ## Introduction
 This project is a fine-tuned version of the original LLASA project. The original project was developed by the [LLaSA_training](https://github.com/zhenye234/LLaSA_training) 
