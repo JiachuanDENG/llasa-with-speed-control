@@ -56,7 +56,7 @@ model.to(device)
 # prompt_wav, sr = sf.read("longer_prompt.wav") #
 # prompt_text = 'I have quite the stomachache. Sungo, can i take the day off?'
 
-prompt_wav, sr = sf.read("doctor_prompt.wav") #
+prompt_wav, sr = sf.read("./example/audio_prompts/doctor_prompt.wav") #
 prompt_text = "A long time ago, i made a major decision world."
  
 
@@ -151,6 +151,6 @@ while True:
 
  
 
-    sf.write(f"gen_{input_text3}.wav", gen_wav[0, 0, :].cpu().numpy(), 16000)
+    sf.write(f"./example/gen_outs/gen_{input_text3}_{input_text2.lower()}.wav", gen_wav[0, 0, :].cpu().numpy(), 16000)
     print (f"Generated speech saved as gen_{input_text3}.wav")
     print ("---------------------------------------------")
